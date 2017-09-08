@@ -8,6 +8,9 @@ const regDigitCaracter = /1\d3/
 const alphanumericCharacter = /1\w3/
 // msg(alphanumericCharacter.test('1_3'))
 
+const whiteSpace = /1\s3/
+msg(whiteSpace.exec('1 3'))
+
 //negaciones: con mayusculas \D \W 
 const notNumber = /1\D3/
 // msg(notNumber.test('153'))
@@ -19,4 +22,8 @@ const range2 = /[A-Z][a-z][a-z]/
 // msg(range2.test('Abc'))
 
 const negatetRanged = /[^1-6]/
-msg(negatetRanged.test('8'))
+// msg(negatetRanged.test('8'))
+
+const alternatedOps = /yes|no/
+// msg(negatetRanged.exec('yeees hola noss no'))
+
