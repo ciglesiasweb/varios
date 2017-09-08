@@ -9,7 +9,7 @@ const alphanumericCharacter = /1\w3/
 // msg(alphanumericCharacter.test('1_3'))
 
 const whiteSpace = /1\s3/
-msg(whiteSpace.exec('1 3'))
+// msg(whiteSpace.exec('1 3'))
 
 //negaciones: con mayusculas \D \W 
 const notNumber = /1\D3/
@@ -27,3 +27,15 @@ const negatetRanged = /[^1-6]/
 const alternatedOps = /yes|no/
 // msg(negatetRanged.exec('yeees hola noss no'))
 
+
+/**
+ * BOUNDARIES INPUTS
+ */
+
+const beginEndInput = /^word|word$/
+// msg(beginEndInput.exec('word word word'))
+
+const wordBoundaries = /\bcan\b/
+// msg(wordBoundaries.exec('can'))
+
+const NotBoundarie = /\Bcan\B/
