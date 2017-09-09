@@ -5,7 +5,7 @@ const regVagueCaracter = /1.3/
 const regDigitCaracter = /1\d3/
 // msg(regDigitCaracter.test('1t3'))
 
-const alphanumericCharacter = /1\w3/
+const alphanumericCharacter = /1\w3/ //No acepta el simbolo punto ni la coma. 
 // msg(alphanumericCharacter.test('1_3'))
 
 const whiteSpace = /1\s3/
