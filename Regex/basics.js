@@ -39,3 +39,9 @@ const wordBoundaries = /\bcan\b/
 // msg(wordBoundaries.exec('can'))
 
 const NotBoundarie = /\Bcan\B/
+
+
+/* hexadecimal as 00-1B-63-84-45-E6D*/
+function isMAC48Address(inputString) {
+    return /^[0-9A-F]{2}-[0-9A-F]{2}-[0-9A-F]{2}-[0-9A-F]{2}-[0-9A-F]{2}-[0-9A-F]{2}$/.test(inputString);
+}
